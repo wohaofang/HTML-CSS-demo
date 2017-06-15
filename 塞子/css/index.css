@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+}
+body{
+	background: #000;
+}
+ul{
+	list-style: none;
+	width: 1000px;
+}
+span{
+	display: block;
+	background: #000;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	margin: 5px;
+}
+ul li{
+	margin:15px;
+    width: 260px;
+    height: 260px;
+    background: #f1f1f1;
+    border-radius: 40px;
+    float: left;
+    padding: 20px;
+    
+}
+/*---------一点的塞子---------*/
+.box1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*---------二点的塞子---------*/
+.box2{
+	display: flex;
+	justify-content: space-between;
+
+}
+.box2 span:nth-child(2){
+	align-self:  flex-end;
+}
+/*---------三点的塞子---------*/
+.box3{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+.box3 span:nth-child(2){
+	align-self:  center;
+}
+.box3 span:nth-child(3){
+	align-self:  flex-end;
+}
+/*---------四点的塞子---------*/
+.box4{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.bzd{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+/*---------五点的塞子---------*/
+.box5{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.wbh{
+	display: flex;
+	align-self: center;
+}
+
+
+
+/*---------六点的塞子---------*/
+.box6{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*---------7点的塞子---------*/
+.box7{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*---------7点的塞子---------*/
+.box8{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.wbh-8{
+	align-self: center;
+}
+/*---------7点的塞子---------*/
+.box9{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
