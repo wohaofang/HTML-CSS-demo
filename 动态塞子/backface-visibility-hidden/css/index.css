@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*==========公用css============*/
+
+span {
+    display: block;
+    background: #000;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.cantainer {
+    width: 300px;
+    height: 300px;
+    /*background: #000;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation:ca;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;
+	top: 0;
+	left: 0;*/
+    transform-style: preserve-3d;
+    /*perspective: 3000px;
+    perspective-origin: 1000px 1000px;*/
+    animation: wrapper 4s ease infinite;
+}
+@keyframes wrapper{
+    0%{transform: rotateX(0) rotateY(0)  translateZ(0px);}
+    50%{transform: rotateX(180deg) rotateY(180deg)  translateZ(50px);}
+    100%{transform: rotateX(360deg) rotateY(360deg)  translateZ(0px);}
+}
+
+.wrapper>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 258px;
+    height: 258px;
+    border: 1px solid #000;
+    /*margin: 20px;*/
+        border-radius: 48px;
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, .2);
+        /*backface-visibility: visible;*/
+        backface-visibility: hidden;
+}
+
+
+/*============第一面==============*/
+
+.div1 {
+        background: rgba(255,255,255,.6);
+    transform: translateZ(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp1 {
+    width: 96px;
+    height: 96px;
+    border: 2px solid #000;
+    background: #f00;
+    box-shadow: inset 0 0 35px #743b3b;
+}
+
+
+/*============第二面==============*/
+
+.div2 {
+        background: rgba(255,255,255,.6);
+    transform: rotateY(180deg) translateZ(150px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2 span:nth-child(2) {
+    align-self: flex-end;
+}
+
+
+/*============第三面==============*/
+
+.div3 {
+        background: rgba(255,255,255,.6);
+    transform: rotateY(90deg) translateZ(150px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.div3 span:nth-child(2) {
+    align-self: center;
+}
+
+.div3 span:nth-child(3) {
+    align-self: flex-end;
+}
+
+
+/*============第四面==============*/
+
+.div4 {
+        background: rgba(255,255,255,.6);
+    transform: rotateY(-90deg) translateZ(150px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bzd {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/*============第五面==============*/
+
+.div5 {
+        background: rgba(255,255,255,.6);
+    transform: rotateX(90deg) translateZ(150px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wbh {
+    align-self: center;
+}
+
+
+/*============第六面==============*/
+
+.div6 {
+        background: rgba(255,255,255,.6);
+    transform: rotateX(-90deg) translateZ(150px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
