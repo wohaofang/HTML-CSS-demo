@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        background: #e5e5e5;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .container {
+        position: relative;
+        margin: 20px;
+        width: 80px;
+        height: 30px;
+        background: #fff;
+        z-index: 1;
+    }
+    
+    .aaa {
+        width: 80px;
+        height: 30px;
+        background: #ccc;
+        z-index: 10;
+        border: 1px solid #a0a0a0;
+    }
+    
+    .container:hover .aaa {
+        border-bottom: none;
+    }
+    
+    .container:hover .wrapper {
+        display: block;
+    }
+    
+    .wrapper {
+        display: none;
+        width: 300px;
+        height: 265px;
+        background: #fff;
+        border: 1px solid #a0a0a0;
+        position: absolute;
+        top: 30px;
+        left: 0px; z-index: -1;
+    }
+    
+    .div1 ul {
+        display: none;
+    }
+    
+    .div1:hover ul {
+        display: block;
+    }
+    /*.wrapper-right {
+        display: none;
+        width: 300px;
+        height: 265px;
+        background: #fff;
+        border: 1px solid #a0a0a0;
+        position: absolute;
+        top: 29px;
+        left: 320px;
+    }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="aaa">
+            <h4>CONTENT</h4></div>
+        <ul class="wrapper">
+            <li class="div1">item1</li>
+            <li class="div1">
+                11111111
+                <ul>
+                    <li>111</li>
+                    <li>111</li>
+                    <li>111</li>
+                    <li>111</li>
+                </ul>
+            </li>
+            <li class="div">item3</li>
+            <li class="div1">item1</li>
+            <li class="div1">item2</li>
+            <li class="div">item3</li>
+            <li class="div1">item1</li>
+            <li class="div1">item2</li>
+            <li class="div">item3</li>
+        </ul>
+        <!-- <ul class="wrapper-right">
+                <li class="div1">item1</li>
+                <li class="div1">item2</li>
+                <li class="div">item3</li>
+                <li class="div1">item1</li>
+                <li class="div1">item2</li>
+                <li class="div">item3</li>
+                <li class="div1">item1</li>
+                <li class="div1">item2</li>
+                <li class="div">item3</li>
+            </ul> -->
+    </div>
+</body>
+
+</html>
