@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮2</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			background: #333;
+		}
+		.tabs{
+			max-width: 800px;
+			width: 100%;
+			margin: 50px auto;
+		}
+		[type="radio"]{
+			display: none;
+		}
+		label{
+			cursor: pointer;
+			background: #555;
+			color: #eee;
+			padding: 1.5% 3%;
+			float: left;
+			margin-right: 2px;
+			border-radius: 5px 5px 0 0;
+		}
+		label:hover{
+			background: #777;
+		}
+		input:checked +label{
+			background: #fff;
+			color: #333;
+		}
+		/*=================content===========================*/
+		.content{
+			float: left;
+			clear: both;
+			position: relative;
+			width: 100%;
+			background: #fff;
+			border-radius: 0 10px 10px 10px;
+			min-height: 300px;
+
+		}
+		.inner{
+			width: 100%;
+			/*opacity: 0;*/
+			position: absolute;
+			background: #fff;
+			border-radius: 0 10px 10px 10px;
+			box-sizing: border-box;
+		}
+		.tabs input:nth-of-type(1):checked ~ .content .inner:first-child,
+		.tabs input:nth-of-type(2):checked ~ .content .inner:nth-child(2),
+		.tabs input:nth-of-type(3):checked ~ .content .inner:nth-child(3),
+		.tabs input:nth-of-type(4):checked ~ .content .inner:last-child{
+			opacity: 1;
+			transition: .3s;
+			z-index: 100
+		} 
+	</style>
+</head>
+<body>
+	<div class="tabs">
+		<input type="radio" name="tabs" id="a" checked>
+		<label for="a">111</label>
+		<input type="radio" name="tabs" id="s">
+		<label for="s">222</label>
+		<input type="radio" name="tabs" id="d">
+		<label for="d">333</label>
+		<input type="radio" name="tabs" id="f">
+		<label for="f">444</label>
+		<!-- content -->
+		<div class="content">
+			<div class="inner">发的发生的股份大股东所发生的事告诉对方告诉对方 </div>
+			<div class="inner">第三方会受到粉红色的风格咖妃告诉对方告诉对方干啥</div>
+			<div class="inner">黄飞鸿是否感受到规范是大法官干部身份</div>
+			<div class="inner">啊发生大发让广大分公司的方式分公司</div>
+		</div>
+	</div>
+</body>
+</html>
