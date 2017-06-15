@@ -1,0 +1,110 @@
+body{
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+[type="checkbox"]{
+	display: none;
+}
+
+/*==========按钮1/.===========*/
+.label1{
+	display: block;
+	width: 60px;
+	height:30px;
+	border-radius: 30px;
+	background: #ccc;
+	position: relative;
+}
+.btn1{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	background: #fff;
+	position: absolute;
+	left: 1px;
+	top: 0;
+	transition: all ease-in .3s;
+}
+
+
+#click1:checked + .label1{
+	background: #0f0;
+}
+#click1:checked + .label1 .btn1{
+	transform: translateX(30px);
+	transition: all ease-in .3s;
+
+}
+/*============按钮3==================*/
+.label3{
+	display: block;
+	width: 60px;
+	height:30px;
+	transform: skew(-20deg);
+	background: #0f0;
+	text-align: center;
+	line-height: 30px;
+}
+.label3::before{
+	content: "ON";
+}
+
+#click3:checked + .label3{
+	background: #ccc;
+}
+#click3:checked + .label3::before{
+	content: "OFF";
+
+}
+
+/*================按钮4================*/
+
+.label4{
+	display: block;
+	width: 80px;
+	height:20px;
+	border-radius: 30px;
+	background: #fff;
+	position: relative;
+	border: 3px solid #ccc;
+}
+.btn4{
+	width: 26px;
+	height: 18px;
+	border-radius: 35%;
+	background: #ccc;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	transition: all ease-in .3s;
+}
+#click4:checked+ .label4{
+	border: 3px solid #0f0;
+}
+#click4:checked+ .label4 .btn4{
+	background: #0f0;
+	transform: translateX(50px);
+	transition: all ease-in .3s;
+}
+
+/*===================按钮5=====================*/
+.label5{
+	display: block;
+	width: 70px;
+	height: 35px;
+	background: #0f0;
+	border-radius: 15px ;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;	
+}
+.label5::before{
+	content: "Yeah!";
+}
+#click5:checked+ .label5{
+	background: #f00;
+}
+#click5:checked+ .label5::before{
+	content: "Nope";
+}
