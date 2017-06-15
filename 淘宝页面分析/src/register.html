@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<style type="text/css">
+    .article{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -225px;
+        margin-left: -270px;
+        width: 540px;
+        height: 450px;
+      /*  background: #ccc;
+      opacity: 0.3;*/
+
+    }
+    
+    body{
+        background: url(../img/img22.jpg);
+    }
+</style>
+
+<body>
+<div class="article">
+    <form action="denglu.html" method="post">
+        姓名:
+        <input type="text" name="txt" placeholder="请输入真实姓名" required>*
+        <br> 性别:
+        <select>
+            <option>男</option>
+            <option>女</option>
+        </select>
+        <br> 生日:
+        <input type="date" name="date">
+        <br> 婚否:
+        <input type="radio" name="hun" value="未婚">
+        <input type="radio" name="hun" value="已婚">
+        <br> 技能:
+        <label>
+            <input type="checkbox" name="技能">HTML/HTML5</label>
+        <label>
+            <input type="checkbox" name="技能">CSS/CSS3</label>
+        <label>
+            <input type="checkbox" name="技能">JavaScript</label>
+        <label>
+            <input type="checkbox" name="技能">jQuery</label>
+        <label>
+            <input type="checkbox" name="技能">BootStrap</label>
+        <label>
+            <input type="checkbox" name="技能">node.js</label>
+        <label>
+            <input type="checkbox" name="技能">MongoDB</label>
+        <label>
+            <input type="checkbox" name="技能">Vue.js</label>
+        <label>
+            <input type="checkbox" name="技能">React.js</label>
+        <br> 邮箱:
+        <input type="email" name="email">*
+        <br> GitHub:
+        <input type="text" name="git" placeholder="请输入GitHub链接">
+        <br> 密码:
+        <input type="password" name="pwd" max="12" min="8" required required>*
+        <br> 头像:
+        <input type="file">
+        <br>
+        <textarea rows="10" cols="30" placeholder="...自我评价..." required></textarea>*
+        <br>
+        <input type="submit" name="sbt">
+    </form>
+
+</div>    
+</body>
+
+</html>
