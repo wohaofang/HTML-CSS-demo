@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>八卦</title>
+	<style type="text/css">
+		.div1{
+			width: 500px;
+			height: 500px;
+			background: #ccc;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -250px 0 0 -250px;
+
+		}
+		.div1::before{
+			content: "";
+			display: block;
+			width: 40px;
+			height: 40px;
+			background: #000;
+			position: absolute;
+			top: 75px;
+			border-radius: 50%;
+			border: 55px solid #fff;
+		}
+		.div1::after{
+			content: "";
+			display: block;
+			width: 40px;
+			height: 40px;
+			background: #fff;
+			position: absolute;
+			top: 75px;
+			left: 150px;
+			border-radius: 50%;
+			border: 55px solid #000;
+		}
+		.wrapper{
+			width: 300px;
+			height: 0;
+			background: #000;
+			border-top: 150px solid #fff;
+			border-bottom: 150px solid #000;
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="wrapper"></div>
+	</div>
+</body>
+</html>
+
+
+
+

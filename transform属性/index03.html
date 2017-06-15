@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮</title>
+	<style type="text/css">
+		.div1{
+			width: 500px;
+			height: 500px;
+			background: #ccc;
+			margin: 50px auto;
+		}
+		label{
+			display: block;
+			margin: 50px;
+			width: 200px;
+			height: 200px;
+			background: #fff;
+			box-shadow: 5px 5px 5px #000;
+		}
+		[type="checkbox"]{
+			display: none;
+		}
+		#click:checked + label{
+			box-shadow: inset 5px 5px 10px #000;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="div1">
+	<input type="checkbox" id="click">
+	<label for="click">1111</label>
+	[type="checkbox"]{
+	   display:none;
+	}
+	#click:checked + label{
+	box-shadow:;
+	}
+</div>
+	
+</body>
+</html>
