@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+	<style type="text/css">
+		.demo{
+			width: 200px;
+			height: 200px;
+			background: red;
+			border: 1px solid #000;
+			border-radius: 50%;
+			animation: demo1 ease 5s infinite ;
+			cursor: pointer;
+		}
+		@keyframes demo1{
+			0%{transform: translate(0,0);}
+			25%{transform: translate(200px,200px);}
+			50%{transform: translate(400px,0);}
+			75%{transform: translate(200px,200px);}
+			100%{transform: translate(0,0);}
+		}
+		.demo:hover{
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+<body>
+<h1>丁铭制作</h1>
+  <div class="demo"></div>
+	
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #ccc;
+    }
+    
+    h1 {
+        width: 430px;
+        height: 35px;
+        margin: 0 auto;
+        
+    }
+    .sp1{
+        background: -webkit-linear-gradient(left, #F00 ,orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: sp1 ease 6s infinite;
+        /*animation-delay: 2s;*/
+
+    }
+    @keyframes sp1{
+        0%{opacity: .3;}
+        20%{opacity: .7;}
+        40%{opacity: 1;}
+        60%{opacity: 1;}
+        80%{opacity: .7;}
+        100%{opacity: .3;}
+
+
+    }
+    .sp2{
+        background: -webkit-linear-gradient(left, #Ff0 ,#0f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: sp1 ease 6s infinite;
+        animation-delay: 2s;
+    }
+    .sp3{
+        background: -webkit-linear-gradient(left, #0ff ,#f0f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: sp1 ease 6s infinite;
+        animation-delay: 4s;
+    }
+    
+    .content {
+        display: inline-block;
+        text-align: center;
+        line-height: 212px;
+        width: 150px;
+        height: 150px;
+        background: #000;
+        border-radius: 50%;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -75px 0 0 -75px;
+    }
+    
+    .cont1 {
+        animation: cont ease 8s infinite;
+    }
+    
+    .cont2 {
+        animation: cont ease 8s infinite;
+        animation-delay: 2s;
+    }
+    
+    .cont3 {
+        animation: cont ease 8s infinite;
+        animation-delay: 4s;
+    }
+    
+    .cont4 {
+        animation: cont ease 8s infinite;
+        animation-delay: 6s;
+    }
+    
+    .div1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -140px 0 0 -140px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid red;
+        transform: rotate(45deg);
+    }
+    
+    @keyframes cont {
+        0% {
+            transform: translate(200px, 0);
+        }
+        25% {
+            transform: translate(0, 200px);
+        }
+        50% {
+            transform: translate(-200px, 0);
+        }
+        75% {
+            transform: translate(0, -200px);
+        }
+        100% {
+            transform: translate(200px, 0);
+        }
+    }
+    
+    .img-1 {
+        display: inline-block;
+        opacity: 0.4;
+        width: 75px;
+        height: 75px;
+        margin: auto;
+        border-radius: 50%;
+        animation: img 3s ease infinite;
+    }
+    
+    @keyframes img {
+        0% {
+            transform: rotate(0deg) scale(1);
+            opacity: 0.4;
+        }
+        25% {
+            transform: rotate(202deg) scale(1.6);
+            opacity: 0.7;
+        }
+        50% {
+            transform: rotate(405deg) scale(2.3);
+            opacity: 1;
+        }
+        75% {
+            transform: rotate(202deg) scale(1.6);
+            opacity: 0.7;
+        }
+        100% {
+            transform: rotate(0deg) scale(1);
+            opacity: 0.4;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <h1>
+    <span class="sp1">老师</span><span class="sp2">我做的有点丑</span><span class="sp3">请不要介意</span>
+    </h1>
+    <div class="div1"></div>
+    <div class="content cont1">
+        <img src="img/1.jpeg" class="img-1">
+    </div>
+    <div class="content cont2">
+        <img src="img/2.jpg" class="img-1">
+    </div>
+    <div class="content cont3">
+        <img src="img/3.jpeg" class="img-1">
+    </div>
+    <div class="content cont4">
+        <img src="img/4.jpeg" class="img-1">
+    </div>
+</body>
+
+</html>

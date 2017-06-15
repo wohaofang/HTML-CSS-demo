@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+	<style type="text/css">
+		.demo{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border: 1px solid #000;
+			animation: demo2 ease infinite 5s ;
+			margin: 300px  auto;
+		}
+	
+		@keyframes demo2{
+			0%{transform: translate(200px,0);}
+			25%{transform: translate(0,200px);}
+			50%{transform: translate(-200px,0);}
+			75%{transform: translate(0,-200px);}
+			100%{transform: translate(200px,0);}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+</body>
+</html>

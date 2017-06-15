@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+ 
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 200px;
+        margin: -100px 0 0 -150px;
+        text-align: center;
+        line-height: 200px;
+    }
+    
+    .demo {
+        background: -webkit-linear-gradient(top, #fff, #ccc);
+        border: 1px solid #000;
+        animation: demo1 2.5s ease;
+        -webkit-animation: demo1 2.5s ease;
+    }
+    @keyframes demo1{
+			0%{transform: scale(0); opacity: 0; }
+			25%{transform:scale(1);opacity: 1;}
+			50%{transform:scale(0);opacity: 0;}
+			75%{transform:scale(.6);opacity: 0.7;}
+			100%{transform:scale(1);opacity: 1;}
+    }
+    @-webkit-keyframes demo1{
+            0%{transform: scale(0); opacity: 0; }
+            25%{transform:scale(1);opacity: 1;}
+            50%{transform:scale(0);opacity: 0;}
+            75%{transform:scale(.6);opacity: 0.7;}
+            100%{transform:scale(1);opacity: 1;}
+    }
+    </style>
+</head>
+
+<body>
+    <div class="demo"><h2>丁铭制作</h2></div>
+  
+        
+</body>
+
+</html>
