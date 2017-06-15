@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    position: relative;
+}
+
+
+/*------------制作一个小幽灵 ------------*/
+
+.ghost {
+    width: 160px;
+    margin: 100px auto;
+    position: relative;
+    animation: ghostUpdown 1s infinite alternate;
+    -webkit-animation: ghostUpdown 1s infinite alternate;
+    -moz-animation: ghostUpdown 1s infinite alternate;
+}
+
+
+/*---------小幽灵的身体------------*/
+
+.ghostBody {
+    width: 140px;
+    height: 180px;
+    background: #fff;
+    border-radius: 100% 100% 0 0;
+    position: relative;
+}
+
+
+/*---------小幽灵的眼睛------------*/
+
+.ghostEye {
+    width: 19px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid #000000;
+    background: #000000;
+    box-shadow: inset -4px 3px #fff;
+    position: absolute;
+    top: 60px;
+}
+
+.left {
+    left: 45px;
+}
+
+.right {
+    right: 50px;
+}
+
+
+/*---------小幽灵的嘴------------*/
+
+.ghostMouth {
+    width: 16px;
+    height: 21px;
+    border-radius: 100%;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 97px;
+    left: 73px;
+}
+
+
+/*---------小幽灵的底部------------*/
+
+.ghostFoot {
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    background-size: 25px 20px;
+    background-image: radial-gradient(circle at 50% 0%, #fff, 71%, transparent 71%);
+}
+
+
+/*---------底部阴影------------*/
+
+.shadow {
+    width: 140px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    margin-top: 70px;
+    animation: shadow 1s infinite alternate;
+    -webkit-animation: shadow 1s infinite alternate;
+    -moz-animation: shadow 1s infinite alternate;
+}
+
+
+/*------关键帧-------*/
+
+@keyframes ghostUpdown {
+    from {
+        margin-top: 100px;
+    }
+    to {
+        margin-top: 70px;
+    }
+}
+
+@-webkit-keyframes ghostUpdown {
+    from {
+        margin-top: 100px;
+    }
+    to {
+        margin-top: 70px;
+    }
+}
+@-moz-keyframes ghostUpdown {
+    from {
+        margin-top: 100px;
+    }
+    to {
+        margin-top: 70px;
+    }
+}
+
+@keyframes shadow {
+    from {
+        margin-top: 70px;
+        opacity: 0.3;
+    }
+    to {
+        margin-top: 100px;
+        opacity: 0.1;
+    }
+}
+
+@-webkit-keyframes shadow {
+    from {
+        margin-top: 70px;
+        opacity: 0.3;
+    }
+    to {
+        margin-top: 100px;
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes shadow {
+    from {
+        margin-top: 70px;
+        opacity: 0.3;
+    }
+    to {
+        margin-top: 100px;
+        opacity: 0.1;
+    }
+}
