@@ -1,2 +1,3 @@
-＃HTML-CSS-demo
-一些小的演示，记录我的HTML和CSS的学习过程
+＃ HTML-CSS-demo
+
+一些小的demo，记录我的HTML和CSS的学习过程
