@@ -1,0 +1,106 @@
+/*================transition-property================*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    text-align: center;
+}
+/*=================hover触发的效果================*/
+.transition-property {
+    width: 150px;
+    height: 150px;
+    background: #0ff;
+    border: 2px solid #000;
+    border-radius: 30px;
+    margin: 30px auto;
+    -webkit-transition-property: all;
+    transition-property: all;
+    cursor: pointer;
+}
+
+.transition-property:hover {
+    width: 500px;
+    height: 300px;
+    background: #e1e1e1;
+    border: 5px solid #f0f;
+    border-radius: 50%;
+    -webkit-transform: scale(0.7) rotate(75deg) ;
+            transform: scale(0.7) rotate(75deg) ;
+}
+
+.transition-duration {
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+.transition-timing-funcition {
+    -webkit-transition-timing-function: cubic-bezier(1, -1.31, 0, 1.78);
+    transition-timing-function: cubic-bezier(1, -1.31, 0, 1.78);
+}
+
+.transition-delay {
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+/*===============按钮===========*/
+
+[type="checkbox"]{
+	display: none;
+}
+label{
+	display: block;
+	width: 75px;
+    height: 34px;
+	background: #eee;
+	border: 2px solid #948484;
+	border-radius: 30px;
+	margin: 50px auto;
+
+}
+.btn{
+	width: 30px;
+	height: 30px;
+	background: #0ff;
+	border: 2px solid #000;
+	border-radius: 50%;
+	-webkit-transition: all ease 1s;
+	transition: all ease 1s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: #9d8df5;
+}
+#click:checked +label{
+	background: #0f0;
+}
+#click:checked +label .btn{
+	-webkit-transform: translateX(41px);
+	        transform: translateX(41px);
+}
+
+/*=============简写全属性	transition demo================*/
+.demo{
+	width: 200px;
+	height: 150px;
+	background: red;
+	-webkit-transition: all 1s ease 1.5s;
+	        transition: all 1s ease 1.5s;
+	        cursor: pointer;
+}
+.demo:hover{
+	width: 150px;
+	height: 300px;
+	background: #ccc;
+	
+	-webkit-transform:translate(150px,50px);
+	        transform:translate(150px,50px) ;
+}
